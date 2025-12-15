@@ -1,0 +1,11 @@
+
+# Core
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+# Optional; training falls back if missing
+xgboost
+# Utils
+python-dotenv
