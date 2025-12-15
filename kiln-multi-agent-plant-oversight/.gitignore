@@ -1,0 +1,10 @@
+
+.venv/
+__pycache__/
+*.pyc
+.env
+logs/
+models/
+artifacts/
+.data/
+notebooks/.ipynb_checkpoints/
