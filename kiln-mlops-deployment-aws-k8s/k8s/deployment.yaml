@@ -1,0 +1,37 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiln-pm
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kiln-pm
+  template:
+    metadata:
+      labels:
+        app: kiln-pm
+    spec:
+      containers:
+      - name: api
+        image: yourrepo/kiln-pm:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+        env:
+        - name: MODEL_PATH
+          value: "/models/kiln_model.pkl"
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "256Mi"
+          limits:
+            cpu: "1000m"
+            memory: "512Mi"
+        volumeMounts:
+        - name: model-vol
+          mountPath: /models
+      volumes:
+      - name: model-vol
+        emptyDir: {}
