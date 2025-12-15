@@ -1,0 +1,6 @@
+
+Kiln operation SOP:
+- Maintain temperature ramp not exceeding 10°C/min.
+- Monitor CO spikes: potential incomplete combustion or airflow restriction.
+- Inspect refractory wear index weekly; above 0.7 requires planned maintenance.
+- Keep setpoint deviation within ±15°C.
