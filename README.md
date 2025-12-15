@@ -3,7 +3,9 @@ Overview
 This project demonstrates how AI and Industry 4.0 principles can transform kiln operations in ceramic brick manufacturing. Inspired by a real-world case at Manufacturing Ltd., it covers the full AI lifecycle:
 
 Problem: Unplanned kiln downtime caused 15–20% production losses annually.
+
 Goal: Predict failures, improve uptime by 20%, reduce maintenance costs, and enhance product quality.
+
 Solution: AI-driven predictive maintenance integrated with Siemens OpCenter MES, IoT sensors, and video analytics.
 
 Lifecycle Stages & Repositories
